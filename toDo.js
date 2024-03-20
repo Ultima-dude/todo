@@ -19,6 +19,7 @@ function addTask() {
 
 function createTaskList() {
   const listContainer = document.createElement("div");
+  listContainer.classList.add("tasksContainer");
   form.after(listContainer);
   taskList = listContainer;
   //console.log("Теперь ты готов!");
@@ -26,6 +27,7 @@ function createTaskList() {
 
 function createTask() {
   const div = document.createElement("div");
+  div.classList.add("taskContainer");
   fillTask(div);
   addTaskButtons(div);
   //console.log(div);

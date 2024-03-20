@@ -1,0 +1,57 @@
+@use 'reset';
+
+body {
+  background: #ff4dff;
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+
+    h1 {
+      margin-top: 50px;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    #toDoForm {
+      margin: 110px auto 40px;
+      width: 40vw;
+
+      label {
+        display: block;
+        text-align: center;
+      }
+
+      .formWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      #toDoInput {
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        border-radius: 50%;
+        width: 25px;
+      }
+    }
+
+    .tasksContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+
+      .taskContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
