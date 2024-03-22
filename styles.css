@@ -62,7 +62,7 @@ body main {
 }
 body main h1 {
   margin-top: 50px;
-  font-size: 26px;
+  font-size: 32px;
   text-align: center;
 }
 body main #toDoForm {
@@ -72,6 +72,7 @@ body main #toDoForm {
 body main #toDoForm label {
   display: block;
   text-align: center;
+  font-size: 24px;
 }
 body main #toDoForm .formWrap {
   display: flex;
@@ -82,22 +83,29 @@ body main #toDoForm .formWrap {
 }
 body main #toDoForm #toDoInput {
   text-align: center;
+  font-size: 20px;
 }
-body main #toDoForm input[type=submit] {
+body main #toDoForm button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  width: 25px;
+  border: medium none;
+  width: 30px;
+  height: 30px;
 }
 body main .tasksContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 body main .tasksContainer .taskContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  background: #fff;
+  padding: 10px;
+  width: 40vw;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px black;
 }
 
 /*# sourceMappingURL=styles.css.map */
